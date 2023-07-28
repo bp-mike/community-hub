@@ -12,7 +12,7 @@ function App() {
         <div className="mt-4">
           <Button
             onClick={() => setCount((count) => count + 1)}
-            className='text-white bg-black'
+            className='text-primary-blue-100 bg-primary-orange-100 hover:bg-primary-orange-200'
           >
             count is {count}
           </Button>

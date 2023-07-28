@@ -3,6 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors:{
+        "primary-blue": {
+          100: '#6AD4FE',
+        },
+        "primary-orange": {
+          100: '#FE6218',
+          200: '#f67337',
+        }
+      },
       screens: {
         // 'sm': {'min': '640px', 'max': '767px'},
         // // => @media (min-width: 640px and max-width: 767px) { ... }
