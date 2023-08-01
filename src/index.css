@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-blue-100: #6ad4fe;
+  --primary-orange-100: #fe6218;
+  --primary-orange-200: #f67337;
+}

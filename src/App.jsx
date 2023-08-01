@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="m-auto text-center mt-9">
-        <h1>Community Hub</h1>
+        <h1 className="text-5xl font-bold mb-7">Community Hub</h1>
         <div className="mt-4">
           <Button
             onClick={() => setCount((count) => count + 1)}
