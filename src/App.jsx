@@ -1,23 +1,21 @@
-import { useState } from 'react'
-import { Button } from '@mantine/core';
-// import './App.css'
+// import { useState } from 'react'
+import { useParams } from 'react-router-dom';
+// import { Button } from '@mantine/core';
+import Post from './components/Post';
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const { feedTopic } = useParams()
+
+  const selectedFeedTopic = feedTopic || "all"
 
   return (
     <>
-      <div className="m-auto text-center mt-9">
-        <h1 className="text-5xl font-bold mb-7">Community Hub</h1>
-        <div className="mt-4">
-          <Button
-            onClick={() => setCount((count) => count + 1)}
-            className='text-primary-blue-100 bg-primary-orange-100 hover:bg-primary-orange-200'
-          >
-            count is {count}
-          </Button>
-          <h1 className='mt-3'>{count}</h1>
-        </div>
+      <div className="m-auto text-center mt-9 p-6">
+        {/* TODO create card displaying the topic */}
+        <h1 className="text-5xl font-bold mb-7">{selectedFeedTopic}</h1>
+
+        <Post className="mt-4"/>
       </div>
     </>
   )

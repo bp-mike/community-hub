@@ -3,7 +3,23 @@
 @tailwind utilities;
 
 :root {
+  /* --primary-bg-color: #F3F2EF; */
+  --primary-bg-color: #f0f2f5;
   --primary-blue-100: #6ad4fe;
   --primary-orange-100: #fe6218;
   --primary-orange-200: #f67337;
+}
+body {
+  background-color: var(--primary-bg-color);
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.side-bar-item{
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
