@@ -16,7 +16,7 @@ body {
 .d-flex-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
 }
 .side-bar-item{
   display: flex;

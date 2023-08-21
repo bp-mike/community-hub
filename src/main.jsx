@@ -8,11 +8,15 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   // { path: "/", element: <App />, errorElement: <ErrorPage /> },
-  { path: "/", element: <RootLayout />, children: [
-    {path: "/", element: <App />},
-    {path: "/feed/:feedTopic", element: <App />},
-  ], 
-  errorElement: <ErrorPage /> },
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { path: "/", element: <App /> },
+      { path: "/feed/:feedTopic", element: <App /> },
+    ],
+    errorElement: <ErrorPage />,
+  },
   // { path: '/:userName', element: <Profile/> }
 ]);
 
