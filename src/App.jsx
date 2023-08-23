@@ -29,7 +29,8 @@ function App() {
       // } else {
       //   console.log("failed to get posts");
       // }
-      let url = "http://localhost:1337/api/posts";
+      // let url = "http://localhost:1337/api/posts";
+      let url = "https://strapi-kbv9.onrender.com/api/posts";
       if (feedTopic) {
         url += `?filters[topic][$eq]=${feedTopic}`;
       }

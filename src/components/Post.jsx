@@ -7,7 +7,7 @@ export default function Post({ description }) {
             <span className="text-2xl font-semibold">M</span>
           </div>
           <div>
-            <p className="t text-gray-600 ms-3 text-sm">userName</p>
+            <p className="t text-gray-600 ms-3 text-sm">Mike</p>
             <p className="t text-gray-400 ms-3 text-xs">Last week . planet</p>
           </div>
         </div>

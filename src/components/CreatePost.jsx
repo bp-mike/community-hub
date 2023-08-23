@@ -22,7 +22,8 @@ export default function CreatePost({ fetchPosts }) {
     };
 
     try {
-      const response = await fetch("http://localhost:1337/api/posts", {
+      // const response = await fetch("http://localhost:1337/api/posts", {
+      const response = await fetch("https://strapi-kbv9.onrender.com/api/posts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

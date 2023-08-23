@@ -1,12 +1,14 @@
 import { Input } from "@mantine/core";
 import { Button } from "@mantine/core";
 // import logo from "./assets/CommunityHub.png"
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/CommunityHub-no-bg.png"
 
 export default function NavBar() {
+  const navigate = useNavigate()
   return (
     <div className="w-screen p-2 d-flex-row bg-white">
-      <div className="w-1/4">
+      <div className="w-1/4 cursor-pointer" onClick={() => navigate('/')}>
         <img
           src={logo}
           className=""
