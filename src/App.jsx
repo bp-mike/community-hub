@@ -73,7 +73,10 @@ function App() {
           ) : (
             posts.map((post) => (
               <div className="mt-4" key={post.id}>
-                <Post description={post.attributes.description} />
+                <Post 
+                description={post.attributes.description} 
+                createdAt={post.attributes.createdAt} 
+                />
               </div>
             ))
           )}

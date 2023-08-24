@@ -1,4 +1,5 @@
-export default function Post({ description }) {
+export default function Post({ description, createdAt }) {
+  const formatedDate = new Date(createdAt).toLocaleString();
   return (
     <>
       <div className="bg-white p-4 rounded-lg text-left h-auto">
@@ -8,7 +9,7 @@ export default function Post({ description }) {
           </div>
           <div>
             <p className="t text-gray-600 ms-3 text-sm">Mike</p>
-            <p className="t text-gray-400 ms-3 text-xs">Last week . planet</p>
+            <p className="t text-gray-400 ms-3 text-xs">{formatedDate}. planet</p>
           </div>
         </div>
         <div className="mt-3 text-sm text-gray-600">
